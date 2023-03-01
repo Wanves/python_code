@@ -22,7 +22,7 @@ class Sector:
       if r != 0 and r.getPatente()== patente:
         self.__registros[i] = 0
         self.__ocupados -= 1
-            Registros(self.__registros, i)
+        Registro(self.__registros, i)
         return r.cuantoEstuvo(horaSalida) * self.__costo
       i+=1  
 
